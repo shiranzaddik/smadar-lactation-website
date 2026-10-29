@@ -1,0 +1,25 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# Deploys the site as a Node web service. On Render: New → Blueprint, point it
+# at this repo, and it picks up everything below.
+services:
+  - type: web
+    name: smadar-lactation-website
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20.18.1
+      # Set this to the live Render URL once known (e.g. https://smadar-xxxx.onrender.com)
+      - key: NEXT_PUBLIC_SITE_URL
+        sync: false
+      # Contact-form email (optional; form logs to server if unset). Add in dashboard.
+      - key: RESEND_API_KEY
+        sync: false
+      - key: CONTACT_FROM_EMAIL
+        sync: false
+      - key: CONTACT_TO_EMAIL
+        sync: false
