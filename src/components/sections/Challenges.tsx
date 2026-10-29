@@ -10,7 +10,7 @@ export function Challenges() {
         <SectionHeading
           eyebrow="מתמודדת עם קושי?"
           title="את לא לבד — ולרוב יש פתרון"
-          subtitle="אם משהו מהרשימה מוכר לך, זה הזמן לפנות."
+          subtitle="משהו מוכר? זה הזמן לפנות."
         />
         <ul className="mx-auto mt-12 grid max-w-4xl gap-3 sm:grid-cols-2">
           {challenges.map((item) => (

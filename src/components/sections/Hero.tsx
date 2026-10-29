@@ -22,8 +22,8 @@ export function Hero() {
             {site.tagline}
           </h1>
           <p className="max-w-lg text-lg leading-relaxed text-ink-light">
-            אחות מוסמכת ויועצת הנקה. ליווי חם ומקצועי עד הבית — כדי שההנקה תתאים
-            לחיים שלך, ולא להפך.
+            אחות מוסמכת ויועצת הנקה. ליווי חם ומקצועי בבית או בקליניקה — בקצב
+            שמתאים לך.
           </p>
 
           <div className="flex flex-wrap items-center gap-3">
@@ -36,9 +36,9 @@ export function Hero() {
 
           <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-ink-light">
             {[
-              "אחות מוסמכת",
-              "ייעוץ עד הבית",
-              "ליווי אישי וחם",
+              "אחות מוסמכת ויועצת הנקה",
+              "התמחות בפגים",
+              "בבית או בקליניקה",
             ].map((item) => (
               <li key={item} className="flex items-center gap-2">
                 <span className="flex h-6 w-6 items-center justify-center rounded-full bg-sage-100 text-sage-600">
@@ -59,7 +59,7 @@ export function Hero() {
           <ImageSlot
             src="/images/smadar.jpg"
             alt={`${site.name} — אחות מוסמכת ויועצת הנקה`}
-            objectPosition="center 22%"
+            objectPosition="center 20%"
             className="relative aspect-[4/5] w-full shadow-soft"
             priority
           />
@@ -69,7 +69,7 @@ export function Hero() {
               <Icon name="home" className="h-5 w-5" />
             </span>
             <div className="leading-tight">
-              <p className="text-sm font-bold text-ink">ייעוץ עד הבית</p>
+              <p className="text-sm font-bold text-ink">בבית או בקליניקה</p>
               <p className="text-xs text-ink-muted">{site.serviceArea}</p>
             </div>
           </div>

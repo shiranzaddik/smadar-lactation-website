@@ -8,7 +8,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 export const metadata: Metadata = {
   title: "קצת עליי",
   description:
-    "הכירו את סמדר שור קניגסברג — אחות מוסמכת ויועצת הנקה, עם ניסיון בטיפת חלב וגישה חמה ואישית לליווי אימהות ומשפחות.",
+    "הכירו את סמדר שור קניגסברג — אחות מוסמכת ויועצת הנקה, עם ניסיון בטיפת חלב והתמחות בפגים, ומתנדבת בעמותת לה״ב.",
   alternates: { canonical: "/about" },
 };
 
@@ -45,7 +45,7 @@ export default function AboutPage() {
             <ImageSlot
               src="/images/smadar.jpg"
               alt={`תמונה אישית של ${site.name}`}
-              objectPosition="center 25%"
+              objectPosition="center 20%"
               className="aspect-[4/5] w-full shadow-soft"
             />
           </div>
@@ -53,20 +53,20 @@ export default function AboutPage() {
           <div className="flex flex-col gap-5 lg:col-span-3">
             <h2 className="font-heading text-2xl font-bold text-ink">הדרך שלי</h2>
             <p className="leading-relaxed text-ink-light">
-              כאחות מוסמכת פגשתי אינספור אימהות ותינוקות ברגעים הראשונים, וראיתי
-              כמה ליווי נכון יכול להפוך תקופה מאתגרת לרגועה ומעצימה.
+              כאחות מוסמכת ליוויתי אימהות ותינוקות רבים ברגעים הראשונים, וראיתי
+              כמה ליווי נכון משנה את החוויה.
             </p>
             <p className="leading-relaxed text-ink-light">
-              הניסיון בטיפת חלב חידד אצלי הבנה חשובה: אין פתרון אחד שמתאים לכולם.
-              לכל אם יש הסיפור שלה — וההנקה צריכה להשתלב בחיים שלה, לא להפך.
+              אין פתרון אחד שמתאים לכולן — לכל אם יש הסיפור שלה, וההנקה צריכה
+              להשתלב בחיים שלה.
             </p>
 
             <h3 className="mt-2 font-heading text-xl font-bold text-ink">
               הגישה שלי
             </h3>
             <p className="leading-relaxed text-ink-light">
-              ליווי חם, קשוב ונטול שיפוטיות. אני כאן כדי לתת לך ידע, כלים ותמיכה —
-              כדי שתקבלי את ההחלטות שמתאימות לך, מתוך ביטחון ורוגע.
+              ליווי חם, קשוב ונטול שיפוטיות — ידע, כלים ותמיכה, כדי שתחליטי מה נכון
+              לך.
             </p>
 
             <div className="mt-4 rounded-3xl border-r-4 border-blush-300 bg-blush-50/60 p-6">
@@ -76,6 +76,38 @@ export default function AboutPage() {
               </p>
               <p className="mt-2 text-sm font-semibold text-ink-muted">— {site.name}</p>
             </div>
+          </div>
+        </div>
+
+        {/* Professional involvement */}
+        <div className="mt-14 grid items-center gap-10 lg:grid-cols-2">
+          <div className="flex flex-col gap-4">
+            <span className="eyebrow w-fit">מעורבות מקצועית</span>
+            <h2 className="font-heading text-2xl font-bold text-ink sm:text-3xl">
+              לא מפסיקה ללמוד ולתרום
+            </h2>
+            <ul className="flex flex-col gap-3">
+              {[
+                "התמחות בליווי הנקה של פגים ומשפחותיהם",
+                "מתנדבת בעמותת לה״ב",
+                "משתתפת בכנסים ובימי עיון מקצועיים בתחום ההנקה",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-ink-light">
+                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sage-100 text-sage-600">
+                    <Icon name="check" className="h-4 w-4" />
+                  </span>
+                  <span className="leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="relative">
+            <ImageSlot
+              src="/images/smadar-speaking.jpg"
+              alt={`${site.name} בכנס מקצועי בתחום ההנקה`}
+              objectPosition="center 40%"
+              className="aspect-[4/5] w-full shadow-soft lg:mr-auto"
+            />
           </div>
         </div>
 

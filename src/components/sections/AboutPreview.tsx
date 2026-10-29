@@ -11,7 +11,7 @@ export function AboutPreview() {
           <ImageSlot
             src="/images/smadar.jpg"
             alt={`פורטרט של ${site.name}`}
-            objectPosition="center 20%"
+            objectPosition="center 15%"
             className="aspect-square w-full max-w-md shadow-soft lg:mr-auto"
           />
         </div>
@@ -21,11 +21,11 @@ export function AboutPreview() {
             נעים להכיר, אני {site.name}
           </h2>
           <p className="text-lg leading-relaxed text-ink-light">
-            אחות מוסמכת ויועצת הנקה, עם ניסיון מעשי בעבודה עם אימהות ותינוקות
-            ובטיפת חלב. אני מאמינה שלכל אם מגיע ליווי חם, סבלני ונטול שיפוטיות.
+            אחות מוסמכת ויועצת הנקה, עם ניסיון בטיפת חלב והתמחות בפגים. לכל אם
+            מגיע ליווי חם ונטול שיפוטיות.
           </p>
           <p className="leading-relaxed text-ink-light">
-            המטרה שלי: שתרגישי בטוחה ומוחזקת — ושההחלטות על ההנקה יהיו שלך.
+            המטרה שלי: שתרגישי בטוחה ומוחזקת, וההחלטות על ההנקה יהיו שלך.
           </p>
           <Link href="/about" className="btn-outline w-fit">
             להכיר אותי יותר

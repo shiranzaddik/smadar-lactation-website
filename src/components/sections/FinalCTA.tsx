@@ -31,7 +31,7 @@ export function FinalCTA() {
             </Link>
           </div>
           <p className="mt-2 text-sm text-sage-50/90">
-            ייעוץ עד הבית · {site.serviceArea}
+            בבית או בקליניקה · {site.serviceArea}
           </p>
         </div>
       </div>

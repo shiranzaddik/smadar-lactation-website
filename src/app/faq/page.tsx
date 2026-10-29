@@ -24,7 +24,7 @@ export default function FaqPage() {
       <PageHero
         eyebrow="שאלות נפוצות"
         title="כל מה שרצית לדעת"
-        subtitle="ריכזתי כאן תשובות לשאלות שחוזרות אצל אימהות רבות. לא מצאת תשובה? אשמח לענות אישית."
+        subtitle="תשובות לשאלות שחוזרות אצל אימהות רבות."
       />
 
       <section className="container-page py-16">

@@ -63,7 +63,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="צרי קשר"
         title="בואי נדבר"
-        subtitle="יש לך שאלה או שאת רוצה לתאם ייעוץ? אני כאן. אפשר לפנות בכל אחת מהדרכים — ואחזור אלייך בהקדם."
+        subtitle="יש שאלה או רוצה לתאם ייעוץ? אני כאן."
       />
 
       <section className="container-page py-16">

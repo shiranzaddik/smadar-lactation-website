@@ -23,7 +23,7 @@ export function Footer() {
             </div>
           </div>
           <p className="max-w-xs text-sm leading-relaxed text-ink-light">
-            ייעוץ הנקה פרטי עד הבית ב{site.serviceArea}. ליווי חם, מקצועי ואישי
+            ייעוץ הנקה פרטי בבית או בקליניקה ב{site.serviceArea}. ליווי חם, מקצועי ואישי
             לאורך כל מסע ההנקה.
           </p>
           <a

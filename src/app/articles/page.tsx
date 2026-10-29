@@ -20,7 +20,7 @@ export default function ArticlesPage() {
       <PageHero
         eyebrow="מאמרים וטיפים"
         title="ידע שמעצים"
-        subtitle="מידע כללי, ברור וזהיר על הנקה — כדי שתרגישי בטוחה יותר בכל שלב. לייעוץ אישי, תמיד אפשר לפנות אליי."
+        subtitle="מידע כללי וברור על הנקה, לכל שלב."
       />
 
       <section className="container-page py-16">

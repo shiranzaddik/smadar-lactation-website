@@ -7,7 +7,7 @@ export function ProcessSteps() {
       <SectionHeading
         eyebrow="איך זה עובד"
         title="שלושה צעדים פשוטים"
-        subtitle="תהליך ברור ורגוע, מהפנייה ועד הליווי."
+        subtitle="פשוט, ברור ורגוע."
       />
       <div className="relative mt-14 grid gap-8 md:grid-cols-3">
         {/* connecting line (desktop) */}
