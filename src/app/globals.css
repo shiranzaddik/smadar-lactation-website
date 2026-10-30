@@ -42,7 +42,7 @@
   }
 
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-base font-semibold transition-all duration-200 focus-visible:ring-2 focus-visible:ring-offset-2;
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-[0.95rem] font-semibold tracking-wide transition-all duration-300 focus-visible:ring-2 focus-visible:ring-offset-2;
   }
 
   .btn-primary {
@@ -63,26 +63,26 @@
   }
 
   .card {
-    @apply rounded-2xl border border-beige-200/70 bg-cream-50/90 p-7 shadow-card;
+    @apply rounded-3xl border border-beige-200/50 bg-cream-50/70 p-8 shadow-[0_2px_24px_-14px_rgba(67,55,43,0.35)] transition-all duration-300 hover:-translate-y-1 hover:border-gold-200/70 hover:shadow-soft;
   }
 
-  /* Eyebrow: small gold label with a short leading rule (reference style). */
+  /* Eyebrow: fine, letter-spaced gold label with a thin leading rule. */
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.12em] text-gold-500;
+    @apply inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em] text-gold-600;
   }
   .eyebrow::before {
     content: "";
-    @apply inline-block h-px w-7 bg-gold-400;
+    @apply inline-block h-px w-8 bg-gold-400;
   }
 
-  /* Short gold underline accent, e.g. under a section title. */
+  /* Fine gold underline accent, e.g. under a section title. */
   .gold-rule {
-    @apply mt-1 h-1 w-14 rounded-full bg-gold-400;
+    @apply mt-3 h-0.5 w-16 rounded-full bg-gold-400;
   }
 
-  /* Hand-emphasised heading word, underlined in gold. */
+  /* Hand-emphasised heading word, underlined with a fine gold line. */
   .gold-underline {
-    @apply underline decoration-gold-400 decoration-[5px] underline-offset-[6px];
+    @apply underline decoration-gold-400 decoration-[3px] underline-offset-[8px];
   }
 
   .link-underline {

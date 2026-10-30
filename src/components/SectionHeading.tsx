@@ -17,10 +17,10 @@ export function SectionHeading({
   const alignment =
     align === "center" ? "text-center items-center" : "text-start items-start";
   return (
-    <div className={`flex flex-col gap-3 ${alignment}`}>
+    <div className={`flex flex-col gap-4 ${alignment}`}>
       {eyebrow ? <span className="eyebrow">{eyebrow}</span> : null}
       <Tag
-        className={`font-heading text-3xl font-bold leading-tight text-ink sm:text-4xl ${
+        className={`font-heading text-3xl font-bold leading-[1.15] tracking-tight text-ink sm:text-4xl lg:text-[2.6rem] ${
           align === "center" ? "mx-auto max-w-2xl" : ""
         }`}
       >

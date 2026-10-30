@@ -13,13 +13,13 @@ export function Hero() {
         <div className="absolute -left-20 top-40 h-80 w-80 rounded-full bg-sage-100/40 blur-3xl" />
       </div>
 
-      <div className="container-page grid items-center gap-10 py-12 lg:grid-cols-2 lg:gap-16 lg:py-20">
+      <div className="container-page grid items-center gap-10 py-16 lg:grid-cols-2 lg:gap-16 lg:py-24">
         {/* Text column — right side in RTL */}
         <div className="order-2 flex flex-col gap-6 lg:order-1">
           <span className="eyebrow w-fit">
             ייעוץ הנקה פרטי · {site.serviceArea}
           </span>
-          <h1 className="font-heading text-4xl font-extrabold leading-[1.15] text-ink sm:text-5xl lg:text-[3.3rem]">
+          <h1 className="font-heading text-4xl font-bold leading-[1.15] tracking-tight text-ink sm:text-5xl lg:text-[3.2rem]">
             ההנקה שלך,{" "}
             <span className="gold-underline">בדרך שמתאימה לך</span>
           </h1>

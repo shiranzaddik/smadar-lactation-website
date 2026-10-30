@@ -5,7 +5,7 @@ import { ImageSlot } from "@/components/ImageSlot";
 
 export function AboutPreview() {
   return (
-    <section className="container-page py-12 lg:py-16">
+    <section className="container-page py-16 lg:py-24">
       <div className="grid items-center gap-12 lg:grid-cols-2">
         <div className="relative order-2 lg:order-1">
           <ImageSlot

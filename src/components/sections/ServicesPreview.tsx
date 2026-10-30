@@ -7,13 +7,13 @@ import { Icon } from "@/components/Icon";
 export function ServicesPreview() {
   const preview = services.slice(0, 6);
   return (
-    <section className="container-page py-12 lg:py-16">
+    <section className="container-page py-16 lg:py-24">
       <SectionHeading
         eyebrow="ליווי אישי"
         title="ליווי לכל שלב"
         subtitle="מהכנה להנקה ועד גמילה."
       />
-      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {preview.map((service) => (
           <ServiceCard key={service.slug} service={service} />
         ))}
