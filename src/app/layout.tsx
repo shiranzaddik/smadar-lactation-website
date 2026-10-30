@@ -15,7 +15,6 @@ import "./globals.css";
 import { site } from "@/config/site";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { StickyMobileBar } from "@/components/StickyMobileBar";
 import { localBusinessJsonLd, personJsonLd, jsonLdScript } from "@/lib/seo";
 
@@ -80,7 +79,6 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <FloatingWhatsApp />
         <StickyMobileBar />
       </body>
     </html>

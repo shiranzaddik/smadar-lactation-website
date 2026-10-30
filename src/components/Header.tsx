@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navLinks, site } from "@/config/site";
 import { Icon } from "./Icon";
-import { whatsappLink } from "@/lib/whatsapp";
 
 export function Header() {
   const pathname = usePathname();
@@ -81,18 +80,6 @@ export function Header() {
           })}
         </ul>
 
-        <div className="hidden lg:block">
-          <a
-            href={whatsappLink()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-whatsapp px-5 py-2.5 text-sm"
-          >
-            <Icon name="whatsapp" className="h-4 w-4" />
-            וואטסאפ
-          </a>
-        </div>
-
         {/* Mobile toggle */}
         <button
           type="button"
@@ -134,17 +121,6 @@ export function Header() {
                 </li>
               );
             })}
-            <li className="mt-2">
-              <a
-                href={whatsappLink()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-whatsapp w-full"
-              >
-                <Icon name="whatsapp" className="h-5 w-5" />
-                לתיאום בוואטסאפ
-              </a>
-            </li>
           </ul>
         </div>
       )}
