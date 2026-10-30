@@ -77,10 +77,9 @@ export const site = {
 // ---------------------------------------------------------------------------
 export const navLinks = [
   { href: "/", label: "דף הבית" },
-  { href: "/services", label: "השירותים שלי" },
-  { href: "/about", label: "קצת עליי" },
+  { href: "/services", label: "ליווי אישי" },
+  { href: "/about", label: "עליי" },
   { href: "/testimonials", label: "המלצות" },
-  { href: "/articles", label: "מאמרים וטיפים" },
   { href: "/faq", label: "שאלות נפוצות" },
   { href: "/contact", label: "צרי קשר" },
 ] as const;

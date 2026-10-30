@@ -17,7 +17,7 @@ export default function ServicesPage() {
   return (
     <>
       <PageHero
-        eyebrow="השירותים שלי"
+        eyebrow="ליווי אישי"
         title="ליווי הנקה שמתאים לך"
         subtitle="כל ייעוץ מותאם אישית — לצרכים, לקצב ולמטרות שלך."
       />

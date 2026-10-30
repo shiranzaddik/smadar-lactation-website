@@ -34,7 +34,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="קצת עליי"
+        eyebrow="עליי"
         title={`נעים להכיר, אני ${site.name}`}
         subtitle={site.role}
       />

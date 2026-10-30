@@ -16,7 +16,7 @@ export function AboutPreview() {
           />
         </div>
         <div className="order-1 flex flex-col gap-5 lg:order-2">
-          <span className="eyebrow w-fit">קצת עליי</span>
+          <span className="eyebrow w-fit">עליי</span>
           <h2 className="font-heading text-3xl font-bold leading-tight text-ink sm:text-4xl">
             נעים להכיר, אני {site.name}
           </h2>

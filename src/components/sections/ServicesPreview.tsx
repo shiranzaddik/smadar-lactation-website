@@ -9,7 +9,7 @@ export function ServicesPreview() {
   return (
     <section className="container-page py-12 lg:py-16">
       <SectionHeading
-        eyebrow="השירותים שלי"
+        eyebrow="ליווי אישי"
         title="ליווי לכל שלב"
         subtitle="מהכנה להנקה ועד גמילה."
       />

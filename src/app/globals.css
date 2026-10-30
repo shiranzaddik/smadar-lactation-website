@@ -4,7 +4,8 @@
 
 @layer base {
   :root {
-    --font-heebo: "Heebo", system-ui, sans-serif;
+    /* Headings use an elegant Hebrew serif; body stays a clean sans. */
+    --font-heebo: "Frank Ruhl Libre", "Heebo", serif;
     --font-assistant: "Assistant", system-ui, sans-serif;
   }
 
@@ -27,11 +28,11 @@
 
   /* Visible, consistent focus ring for keyboard users (accessibility) */
   :focus-visible {
-    @apply outline-none ring-2 ring-sage-500 ring-offset-2 ring-offset-cream;
+    @apply outline-none ring-2 ring-gold-400 ring-offset-2 ring-offset-cream;
   }
 
   ::selection {
-    @apply bg-blush-200 text-ink;
+    @apply bg-gold-200 text-ink;
   }
 }
 
@@ -41,11 +42,11 @@
   }
 
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-base font-semibold transition-all duration-200 focus-visible:ring-2 focus-visible:ring-offset-2;
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-base font-semibold transition-all duration-200 focus-visible:ring-2 focus-visible:ring-offset-2;
   }
 
   .btn-primary {
-    @apply btn bg-sage-500 text-white shadow-soft hover:bg-sage-600 hover:shadow-float focus-visible:ring-sage-600;
+    @apply btn bg-brown-600 text-cream shadow-soft hover:bg-brown-700 hover:shadow-float focus-visible:ring-brown-600;
   }
 
   .btn-whatsapp {
@@ -53,23 +54,47 @@
   }
 
   .btn-outline {
-    @apply btn border-2 border-sage-400 bg-transparent text-sage-700 hover:bg-sage-50 focus-visible:ring-sage-500;
+    @apply btn border-2 border-brown-300 bg-transparent text-brown-700 hover:bg-brown-50 focus-visible:ring-brown-400;
   }
 
   .btn-blush {
-    @apply btn bg-blush-400 text-white shadow-soft hover:bg-blush-500 hover:shadow-float focus-visible:ring-blush-500;
+    @apply btn bg-gold-400 text-brown-700 shadow-soft hover:bg-gold-500 hover:text-cream hover:shadow-float focus-visible:ring-gold-500;
   }
 
   .card {
-    @apply rounded-3xl border border-beige-200/70 bg-white/80 p-7 shadow-card backdrop-blur-sm;
+    @apply rounded-2xl border border-beige-200/70 bg-cream-50/90 p-7 shadow-card;
   }
 
+  /* Eyebrow: small gold label with a short leading rule (reference style). */
   .eyebrow {
-    @apply inline-block rounded-full bg-blush-50 px-4 py-1.5 text-sm font-semibold tracking-wide text-blush-600;
+    @apply inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.12em] text-gold-500;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply inline-block h-px w-7 bg-gold-400;
+  }
+
+  /* Short gold underline accent, e.g. under a section title. */
+  .gold-rule {
+    @apply mt-1 h-1 w-14 rounded-full bg-gold-400;
+  }
+
+  /* Hand-emphasised heading word, underlined in gold. */
+  .gold-underline {
+    @apply underline decoration-gold-400 decoration-[5px] underline-offset-[6px];
   }
 
   .link-underline {
-    @apply underline decoration-sage-300 decoration-2 underline-offset-4 hover:decoration-sage-500;
+    @apply underline decoration-gold-300 decoration-2 underline-offset-4 hover:decoration-gold-500;
+  }
+
+  /* Subtle dotted background texture (reference uses gold polka dots). */
+  .dot-pattern {
+    background-image: radial-gradient(
+      theme("colors.gold.200") 1.3px,
+      transparent 1.3px
+    );
+    background-size: 22px 22px;
   }
 }
 

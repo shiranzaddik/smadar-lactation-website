@@ -18,8 +18,9 @@ export function Hero() {
           <span className="eyebrow w-fit">
             ייעוץ הנקה פרטי · {site.serviceArea}
           </span>
-          <h1 className="font-heading text-4xl font-extrabold leading-[1.15] text-ink sm:text-5xl lg:text-6xl">
-            {site.tagline}
+          <h1 className="font-heading text-4xl font-black leading-[1.2] text-ink sm:text-5xl lg:text-6xl">
+            ההנקה שלך,{" "}
+            <span className="gold-underline">בדרך שמתאימה לך</span>
           </h1>
           <p className="max-w-lg text-lg leading-relaxed text-ink-light">
             אחות מוסמכת ויועצת הנקה. ליווי חם ומקצועי בבית או בקליניקה — בקצב

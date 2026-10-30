@@ -26,6 +26,7 @@ export function SectionHeading({
       >
         {title}
       </Tag>
+      <span className="gold-rule" aria-hidden />
       {subtitle ? (
         <p
           className={`text-lg leading-relaxed text-ink-light ${
