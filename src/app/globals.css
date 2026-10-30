@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --font-heebo: "Heebo", sans-serif;
-    --font-assistant: "Assistant", sans-serif;
+    --font-heebo: "Heebo", system-ui, sans-serif;
+    --font-assistant: "Assistant", system-ui, sans-serif;
   }
 
   html {

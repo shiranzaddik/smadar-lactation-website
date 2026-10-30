@@ -1,5 +1,16 @@
 import type { Metadata, Viewport } from "next";
-import { Heebo, Assistant } from "next/font/google";
+// Self-hosted fonts (bundled via @fontsource) — no build-time network fetch,
+// so production builds don't depend on reaching Google Fonts. Each weight file
+// includes all subsets (Hebrew + Latin). Font families are set in globals.css.
+import "@fontsource/heebo/400.css";
+import "@fontsource/heebo/500.css";
+import "@fontsource/heebo/600.css";
+import "@fontsource/heebo/700.css";
+import "@fontsource/heebo/800.css";
+import "@fontsource/assistant/400.css";
+import "@fontsource/assistant/500.css";
+import "@fontsource/assistant/600.css";
+import "@fontsource/assistant/700.css";
 import "./globals.css";
 import { site } from "@/config/site";
 import { Header } from "@/components/Header";
@@ -7,20 +18,6 @@ import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { StickyMobileBar } from "@/components/StickyMobileBar";
 import { localBusinessJsonLd, personJsonLd, jsonLdScript } from "@/lib/seo";
-
-const heebo = Heebo({
-  subsets: ["hebrew", "latin"],
-  variable: "--font-heebo",
-  display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-const assistant = Assistant({
-  subsets: ["hebrew", "latin"],
-  variable: "--font-assistant",
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -62,7 +59,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="he" dir="rtl" className={`${heebo.variable} ${assistant.variable}`}>
+    <html lang="he" dir="rtl">
       <body className="flex min-h-screen flex-col">
         <script
           type="application/ld+json"
