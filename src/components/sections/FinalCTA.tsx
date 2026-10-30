@@ -18,10 +18,7 @@ export function FinalCTA() {
             לעזור לך ולתינוק.
           </p>
           <div className="mt-2 flex flex-wrap items-center justify-center gap-3">
-            <WhatsAppButton
-              label="לתיאום ייעוץ בוואטסאפ"
-              className="bg-white text-sage-700 hover:bg-cream"
-            />
+            <WhatsAppButton label="לתיאום ייעוץ בוואטסאפ" />
             <Link
               href="/contact"
               className="btn border-2 border-white/70 text-white hover:bg-white/10"

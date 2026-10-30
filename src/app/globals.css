@@ -49,8 +49,9 @@
     @apply btn bg-brown-600 text-cream shadow-soft hover:bg-brown-700 hover:shadow-float focus-visible:ring-brown-600;
   }
 
+  /* WhatsApp CTA — brand brown to match the site; keeps the small WA icon. */
   .btn-whatsapp {
-    @apply btn bg-[#25D366] text-white shadow-soft hover:bg-[#1ebe5a] hover:shadow-float focus-visible:ring-[#1ebe5a];
+    @apply btn bg-brown-600 text-cream shadow-soft hover:bg-brown-700 hover:shadow-float focus-visible:ring-brown-600;
   }
 
   .btn-outline {
