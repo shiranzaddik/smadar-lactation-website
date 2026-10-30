@@ -43,9 +43,9 @@ export default function AboutPage() {
         <div className="grid items-start gap-12 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <ImageSlot
-              src="/images/smadar.jpg"
+              src="/images/smadar-portrait.jpg"
               alt={`תמונה אישית של ${site.name}`}
-              objectPosition="center 20%"
+              objectPosition="center 15%"
               className="aspect-[4/5] w-full shadow-soft"
             />
           </div>

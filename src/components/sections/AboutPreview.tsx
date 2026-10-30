@@ -9,9 +9,9 @@ export function AboutPreview() {
       <div className="grid items-center gap-12 lg:grid-cols-2">
         <div className="relative order-2 lg:order-1">
           <ImageSlot
-            src="/images/smadar.jpg"
+            src="/images/smadar-portrait.jpg"
             alt={`פורטרט של ${site.name}`}
-            objectPosition="center 15%"
+            objectPosition="center 20%"
             className="aspect-square w-full max-w-md shadow-soft lg:mr-auto"
           />
         </div>

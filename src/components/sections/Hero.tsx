@@ -57,9 +57,9 @@ export function Hero() {
             className="absolute -left-4 -top-4 h-full w-full rounded-4xl border border-sage-200 bg-sage-50/50 lg:-left-6 lg:-top-6"
           />
           <ImageSlot
-            src="/images/smadar.jpg"
+            src="/images/smadar-portrait.jpg"
             alt={`${site.name} — אחות מוסמכת ויועצת הנקה`}
-            objectPosition="center 20%"
+            objectPosition="center 15%"
             className="relative aspect-[4/5] w-full shadow-soft"
             priority
           />
