@@ -5,76 +5,76 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Warm, elegant palette: chocolate brown + gold + olive on cream.
+        // Soft, warm palette: light mocha + gold + gentle rose & olive on cream.
+        // A middle ground between the original sage/blush and the deep brown look.
         cream: {
-          DEFAULT: "#F4EEE2",
-          50: "#FBF8F1",
-          100: "#F4EEE2",
-          200: "#EAE0CD",
+          DEFAULT: "#F7F3EB",
+          50: "#FCFAF4",
+          100: "#F7F3EB",
+          200: "#EEE6D6",
         },
-        // Primary brand — chocolate brown (buttons, strong accents).
+        // Primary brand — warm, light mocha brown (buttons, accents).
         brown: {
-          DEFAULT: "#5F3D28",
-          50: "#F4ECE5",
-          100: "#E7D7C8",
-          200: "#D2B49C",
-          300: "#B98E6E",
-          400: "#996B4C",
-          500: "#7A4F34",
-          600: "#5F3D28",
-          700: "#48301F",
+          DEFAULT: "#7E5C41",
+          50: "#F7F0E9",
+          100: "#ECDDCD",
+          200: "#DBC1A9",
+          300: "#C6A588",
+          400: "#B08A6B",
+          500: "#977254",
+          600: "#7E5C41",
+          700: "#5F4531",
         },
-        // Gold / mustard accent (eyebrows, underlines, dots).
+        // Gold / honey accent (eyebrows, underlines, dots) — kept, softened.
         gold: {
           DEFAULT: "#CBA14A",
-          50: "#FAF3E2",
-          100: "#F3E6C4",
-          200: "#E8D094",
-          300: "#DBB862",
-          400: "#CBA14A",
+          50: "#FAF4E4",
+          100: "#F3E8CB",
+          200: "#E8D39B",
+          300: "#DBBD6B",
+          400: "#CDA651",
           500: "#B08832",
           600: "#8E6C26",
         },
-        // Olive-green feature sections / footer bar (mapped to the legacy
-        // `sage` name so existing green usages adopt the new olive tone).
-        sage: {
-          DEFAULT: "#77814B",
-          50: "#F2F3EA",
-          100: "#E2E4CF",
-          200: "#CBD0AC",
-          300: "#AEB684",
-          400: "#929B63",
-          500: "#77814B",
-          600: "#5E663A",
-          700: "#474E2C",
-        },
-        // Soft warm sand (legacy `blush` name — now a gold-tinted neutral,
-        // so former pink accents read as warm cream/gold).
+        // Soft dusty rose (legacy `blush` name) — a gentle warm accent that
+        // brings back a touch of the original softness.
         blush: {
-          DEFAULT: "#E7D3A8",
-          50: "#FAF3E2",
-          100: "#F3E7CC",
-          200: "#EBDAB2",
-          300: "#E0C78C",
-          400: "#D0A95C",
-          500: "#B08832",
-          600: "#8E6C26",
+          DEFAULT: "#E1B4A8",
+          50: "#FBF2EF",
+          100: "#F6E4DE",
+          200: "#EDCEC4",
+          300: "#E1B4A8",
+          400: "#CF9486",
+          500: "#B87667",
+          600: "#9A5B4D",
+        },
+        // Soft olive-green feature sections / footer bar (legacy `sage` name).
+        sage: {
+          DEFAULT: "#879257",
+          50: "#F3F4EB",
+          100: "#E4E7D2",
+          200: "#CDD4AC",
+          300: "#B2BC85",
+          400: "#9AA667",
+          500: "#7F8B4F",
+          600: "#656E3D",
+          700: "#4C5330",
         },
         beige: {
-          DEFAULT: "#E3D6BF",
-          100: "#EFE7D6",
-          200: "#E3D6BF",
-          300: "#CFBC9C",
+          DEFAULT: "#E4D7C0",
+          100: "#F0E8D8",
+          200: "#E4D7C0",
+          300: "#D0BD9D",
         },
         ink: {
-          DEFAULT: "#3E2F23",
-          light: "#5C4A3A",
-          muted: "#8A7765",
+          DEFAULT: "#43372B",
+          light: "#60513F",
+          muted: "#8C7C6A",
         },
       },
       fontFamily: {
         sans: ["var(--font-assistant)", "system-ui", "sans-serif"],
-        heading: ["var(--font-heebo)", "var(--font-assistant)", "serif"],
+        heading: ["var(--font-heebo)", "var(--font-assistant)", "sans-serif"],
       },
       boxShadow: {
         soft: "0 10px 40px -15px rgba(74, 64, 56, 0.18)",

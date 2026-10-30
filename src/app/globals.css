@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    /* Headings use an elegant Hebrew serif; body stays a clean sans. */
-    --font-heebo: "Frank Ruhl Libre", "Heebo", serif;
+    /* Clean, modern Hebrew sans for headings and body. */
+    --font-heebo: "Heebo", system-ui, sans-serif;
     --font-assistant: "Assistant", system-ui, sans-serif;
   }
 

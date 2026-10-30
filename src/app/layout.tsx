@@ -2,9 +2,6 @@ import type { Metadata, Viewport } from "next";
 // Self-hosted fonts (bundled via @fontsource) — no build-time network fetch,
 // so production builds don't depend on reaching Google Fonts. Each weight file
 // includes all subsets (Hebrew + Latin). Font families are set in globals.css.
-import "@fontsource/frank-ruhl-libre/500.css";
-import "@fontsource/frank-ruhl-libre/700.css";
-import "@fontsource/frank-ruhl-libre/900.css";
 import "@fontsource/heebo/400.css";
 import "@fontsource/heebo/500.css";
 import "@fontsource/heebo/600.css";
