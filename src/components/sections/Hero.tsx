@@ -43,7 +43,7 @@ export function Hero() {
               "בבית או בקליניקה",
             ].map((item) => (
               <li key={item} className="flex items-center gap-2">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-gold-100 text-gold-600">
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-sage-100 text-sage-600">
                   <Icon name="check" className="h-4 w-4" />
                 </span>
                 {item}
@@ -57,7 +57,7 @@ export function Hero() {
           {/* editorial offset frame behind the portrait */}
           <div
             aria-hidden
-            className="absolute -left-4 -top-4 h-full w-full rounded-[2rem] border border-gold-200 bg-gold-50/60 lg:-left-6 lg:-top-6"
+            className="absolute -left-4 -top-4 h-full w-full rounded-[2rem] border border-blush-200 bg-blush-50/60 lg:-left-6 lg:-top-6"
           />
           <ImageSlot
             src="/images/smadar-portrait.jpg"
@@ -69,7 +69,7 @@ export function Hero() {
           />
           {/* floating trust chip */}
           <div className="absolute -bottom-5 right-6 flex items-center gap-3 rounded-2xl bg-cream/95 px-5 py-3 shadow-float backdrop-blur-sm">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gold-100 text-gold-600">
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-sage-100 text-sage-600">
               <Icon name="home" className="h-5 w-5" />
             </span>
             <div className="leading-tight">

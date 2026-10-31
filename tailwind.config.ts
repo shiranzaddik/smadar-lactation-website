@@ -5,71 +5,47 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Soft, warm palette: light mocha + gold + gentle rose & olive on cream.
-        // A middle ground between the original sage/blush and the deep brown look.
+        // Fresh, soft maternal-wellness palette: bright cream, calm sage green
+        // and a warm dusty-blush rose. Clean and modern — no brown, no gold.
         cream: {
-          DEFAULT: "#F7F3EB",
-          50: "#FCFAF4",
-          100: "#F7F3EB",
-          200: "#EEE6D6",
+          DEFAULT: "#FBF7F1",
+          50: "#FEFCFA",
+          100: "#FBF7F1",
+          200: "#F4ECE0",
         },
-        // Primary brand — warm, light mocha brown (buttons, accents).
-        brown: {
-          DEFAULT: "#7E5C41",
-          50: "#F7F0E9",
-          100: "#ECDDCD",
-          200: "#DBC1A9",
-          300: "#C6A588",
-          400: "#B08A6B",
-          500: "#977254",
-          600: "#7E5C41",
-          700: "#5F4531",
-        },
-        // Gold / honey accent (eyebrows, underlines, dots) — kept, softened.
-        gold: {
-          DEFAULT: "#CBA14A",
-          50: "#FAF4E4",
-          100: "#F3E8CB",
-          200: "#E8D39B",
-          300: "#DBBD6B",
-          400: "#CDA651",
-          500: "#B08832",
-          600: "#8E6C26",
-        },
-        // Soft dusty rose (legacy `blush` name) — a gentle warm accent that
-        // brings back a touch of the original softness.
-        blush: {
-          DEFAULT: "#E1B4A8",
-          50: "#FBF2EF",
-          100: "#F6E4DE",
-          200: "#EDCEC4",
-          300: "#E1B4A8",
-          400: "#CF9486",
-          500: "#B87667",
-          600: "#9A5B4D",
-        },
-        // Soft olive-green feature sections / footer bar (legacy `sage` name).
+        // Primary brand — calm, soft sage green (buttons, links, accents).
         sage: {
-          DEFAULT: "#879257",
-          50: "#F3F4EB",
-          100: "#E4E7D2",
-          200: "#CDD4AC",
-          300: "#B2BC85",
-          400: "#9AA667",
-          500: "#7F8B4F",
-          600: "#656E3D",
-          700: "#4C5330",
+          DEFAULT: "#8EA587",
+          50: "#F1F4EF",
+          100: "#DCE4D8",
+          200: "#BFCDBA",
+          300: "#A3B69B",
+          400: "#8EA587",
+          500: "#73896C",
+          600: "#5B6E55",
+          700: "#475641",
+        },
+        // Warm dusty-rose accent (eyebrows, underlines, highlights).
+        blush: {
+          DEFAULT: "#E7B9B0",
+          50: "#FBF1EF",
+          100: "#F6E0DB",
+          200: "#EFC9C1",
+          300: "#E7B9B0",
+          400: "#D99B8F",
+          500: "#C87C6E",
+          600: "#A85F52",
         },
         beige: {
-          DEFAULT: "#E4D7C0",
-          100: "#F0E8D8",
-          200: "#E4D7C0",
-          300: "#D0BD9D",
+          DEFAULT: "#E9DFD1",
+          100: "#F3ECE1",
+          200: "#E9DFD1",
+          300: "#D9CAB5",
         },
         ink: {
-          DEFAULT: "#43372B",
-          light: "#60513F",
-          muted: "#8C7C6A",
+          DEFAULT: "#4A4038",
+          light: "#6B5F54",
+          muted: "#8C8073",
         },
       },
       fontFamily: {

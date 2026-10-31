@@ -28,11 +28,11 @@
 
   /* Visible, consistent focus ring for keyboard users (accessibility) */
   :focus-visible {
-    @apply outline-none ring-2 ring-gold-400 ring-offset-2 ring-offset-cream;
+    @apply outline-none ring-2 ring-sage-500 ring-offset-2 ring-offset-cream;
   }
 
   ::selection {
-    @apply bg-gold-200 text-ink;
+    @apply bg-blush-200 text-ink;
   }
 }
 
@@ -46,53 +46,49 @@
   }
 
   .btn-primary {
-    @apply btn bg-brown-600 text-cream shadow-soft hover:bg-brown-700 hover:shadow-float focus-visible:ring-brown-600;
+    @apply btn bg-sage-500 text-white shadow-soft hover:bg-sage-600 hover:shadow-float focus-visible:ring-sage-600;
   }
 
-  /* WhatsApp CTA — brand brown to match the site; keeps the small WA icon. */
+  /* WhatsApp CTA — recognisable WhatsApp green; keeps the small WA icon. */
   .btn-whatsapp {
-    @apply btn bg-brown-600 text-cream shadow-soft hover:bg-brown-700 hover:shadow-float focus-visible:ring-brown-600;
+    @apply btn bg-[#25D366] text-white shadow-soft hover:bg-[#1ebe5a] hover:shadow-float focus-visible:ring-[#1ebe5a];
   }
 
   .btn-outline {
-    @apply btn border-2 border-brown-300 bg-transparent text-brown-700 hover:bg-brown-50 focus-visible:ring-brown-400;
+    @apply btn border-2 border-sage-300 bg-transparent text-sage-700 hover:bg-sage-50 focus-visible:ring-sage-400;
   }
 
   .btn-blush {
-    @apply btn bg-gold-400 text-brown-700 shadow-soft hover:bg-gold-500 hover:text-cream hover:shadow-float focus-visible:ring-gold-500;
+    @apply btn bg-blush-400 text-white shadow-soft hover:bg-blush-500 hover:shadow-float focus-visible:ring-blush-500;
   }
 
   .card {
-    @apply rounded-3xl border border-beige-200/50 bg-cream-50/70 p-8 shadow-[0_2px_24px_-14px_rgba(67,55,43,0.35)] transition-all duration-300 hover:-translate-y-1 hover:border-gold-200/70 hover:shadow-soft;
+    @apply rounded-3xl border border-beige-200/70 bg-white/80 p-8 shadow-card backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-blush-200/70 hover:shadow-soft;
   }
 
-  /* Eyebrow: fine, letter-spaced gold label with a thin leading rule. */
+  /* Eyebrow: soft blush pill label above a section title. */
   .eyebrow {
-    @apply inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em] text-gold-600;
-  }
-  .eyebrow::before {
-    content: "";
-    @apply inline-block h-px w-8 bg-gold-400;
+    @apply inline-block rounded-full bg-blush-50 px-4 py-1.5 text-sm font-semibold tracking-wide text-blush-600;
   }
 
-  /* Fine gold underline accent, e.g. under a section title. */
+  /* Fine accent rule under a section title. */
   .gold-rule {
-    @apply mt-3 h-0.5 w-16 rounded-full bg-gold-400;
+    @apply mt-1 h-0.5 w-16 rounded-full bg-blush-300;
   }
 
-  /* Hand-emphasised heading word, underlined with a fine gold line. */
+  /* Hand-emphasised heading word, underlined with a fine blush line. */
   .gold-underline {
-    @apply underline decoration-gold-400 decoration-[3px] underline-offset-[8px];
+    @apply underline decoration-blush-400 decoration-[3px] underline-offset-[8px];
   }
 
   .link-underline {
-    @apply underline decoration-gold-300 decoration-2 underline-offset-4 hover:decoration-gold-500;
+    @apply underline decoration-sage-300 decoration-2 underline-offset-4 hover:decoration-sage-500;
   }
 
-  /* Subtle dotted background texture (reference uses gold polka dots). */
+  /* Subtle dotted background texture. */
   .dot-pattern {
     background-image: radial-gradient(
-      theme("colors.gold.200") 1.3px,
+      theme("colors.blush.200") 1.3px,
       transparent 1.3px
     );
     background-size: 22px 22px;
